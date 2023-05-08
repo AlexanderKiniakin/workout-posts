@@ -1,0 +1,72 @@
+body {
+    background: #fbf2e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.users-container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin: 30px;
+    border: solid 1px;
+    cursor: pointer;
+}
+
+.user-alldata {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.first-td {
+    width: 20%;
+    border: solid 1px;
+    padding: 8px 8px 8px 20px;
+}
+
+.second-td {
+    border: solid 1px;
+    padding: 8px 8px 8px 20px;
+}
+
+.button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.posts {
+    width: 100%;
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.post {
+    width: 40%;
+    border: solid 1px;
+    margin: 30px 30px 0px 0px;
+    padding: 10px;
+}
+
+.text {
+    font-weight: 900;
+}
