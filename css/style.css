@@ -70,3 +70,8 @@ table {
 .text {
     font-weight: 900;
 }
+
+.text-posts {
+    display: none;
+    font-weight: 900;
+}

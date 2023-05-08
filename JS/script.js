@@ -29,17 +29,19 @@ class User {
         let users_data = document.querySelector('.users-data');
         let div_data = await document.createElement('div');
         let button_posts = await document.createElement('button');
-        let status = 1;
+        let counter = 1;
 
         div_data.setAttribute('class', 'user-alldata');
         button_posts.setAttribute('class', 'button');
         button_posts.addEventListener('click', () => {
-            if (status == 1) {
+            if (counter == 1) {
                 document.querySelector('.posts').style.display = 'flex';
-                status = 0;
+                document.querySelector('.text-posts').style.display = 'block';
+                counter = 0;
             } else {
                 document.querySelector('.posts').style.display = 'none';
-                status = 1;
+                document.querySelector('.text-posts').style.display = 'none';
+                counter = 1;
             }
         });
         
@@ -85,7 +87,7 @@ class User {
         let paragraph = await document.createElement('p');
         let posts_div = await document.createElement('div');
 
-        paragraph.setAttribute('class', 'text');
+        paragraph.setAttribute('class', 'text-posts');
         posts_div.setAttribute('class', 'posts');
 
         paragraph.innerHTML = "User's posts:";
